@@ -13,6 +13,7 @@
 }
 
 .navbar a {
+    display: block;
     background-color: #0ddb85c4;
     text-align: center;
     color: #fff;
@@ -25,4 +26,8 @@
 .navbar a:hover {
     background-color: #fff222;
     color: #000;
+}
+
+.navbar .item {
+    background-color: #9684a8
 }

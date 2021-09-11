@@ -18,7 +18,8 @@
     color: #fff;
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
+    font-size: 24px;
+    transition: width 2s, 4s;
 }
 
 .navbar a:hover {

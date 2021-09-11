@@ -2,6 +2,30 @@
     background-color: #00d4d4e0;
 }
 
+.navbar {
+    overflow: hidden;
+}
+
 .navbar li {
-    background-color: #888;
+    list-style: none;
+    float: left;
+    padding: 10px;
+}
+
+.navbar li:hover {
+    background-color: #333;
+}
+
+.navbar a {
+    background-color: #0ddb85c4;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background-color: #fff222;
+    color: #000;
 }

@@ -31,3 +31,9 @@
 .navbar .item {
     background-color: #9684a8
 }
+
+@media (min-width: 768px) {
+    * {
+        background-color: #666
+    }
+}

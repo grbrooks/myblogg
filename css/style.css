@@ -12,10 +12,6 @@
     padding: 10px;
 }
 
-.navbar li:hover {
-    background-color: #333;
-}
-
 .navbar a {
     background-color: #0ddb85c4;
     text-align: center;

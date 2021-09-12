@@ -32,8 +32,8 @@
     background-color: #9684a8
 }
 
-@media (min-width: 768px) {
+@media (max-width: 360px) {
     * {
-        background-color: #666
+        background-color: #07dd60
     }
 }

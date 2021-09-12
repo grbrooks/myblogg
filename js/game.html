@@ -11,12 +11,13 @@
     </style>
 </head>
 
-<body>
+<div>
 
     <h1>Guess a number</h1>
-    <label for="guessField">Enter a guess: </label><input type="text" id="guessField" class="guessField">
-    <input type="submit" value="Submit guess" class="guessSubmit">
-
+    <div class="form">
+        <label for="guessField">Enter a guess: </label><input type="text" id="guessField" class="guessField">
+        <input type="submit" value="Submit guess" class="guessSubmit">
+    </div>
     <div class="resultParas">
         <p class="guesses"></p>
         <p class="lastResult"></p>
@@ -49,7 +50,12 @@
                 lastResult.textContent = "Congratulations! You have WoN!!!"
                 lastResult.style.backgroundColor = "green";
                 loOrHi.textContent = '';
-                setGame
+                setGameOver();
+            } else if (guessCount === 10) {
+                lastResult.textContent = '!!!Game Over!!!';
+                loOrHi.textContent = " ";
+                setGameOver();
+            } else if (guessCount === 10) {
 
                 lastResult.textContent = "Wrong!";
                 lastResult.style.backgroundColor = 'red';
@@ -63,14 +69,14 @@
             guessField.value = '';
             guessField.focus();
         }
-        console.log(userGuess.value);
+        guessSubmit.addEventListener(click, checkGuess);
 
         function setGameOver() {
             guessField.disabled = true;
             guessSubmit.disabled = true;
             resetButton = document.createElement('button');
             resetButton.textContent = 'Start new game';
-            document.body.append(resetButton);
+            document.body.appendChild(resetButton);
             resetButton.addEventListener('click', resetGame);
         }
 
@@ -94,8 +100,8 @@
             randomNumber = Math.floor(Math.random() * 100) + 1;
 
         }
-        }
+        console.log(randomNumber);
     </script>
-</body>
+    </body>
 
 </html>
